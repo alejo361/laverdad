@@ -76,3 +76,11 @@ body{
 .textNoticia{
     text-align: justify;
 }
+.policialesContainer{
+    background-image: url('../img/fondo-crimen.png');
+    /*background-image:url('../images/bg.png');*/
+    background-repeat:no-repeat;
+    /*background-size:contain;*/
+    background-size: cover;
+    background-position:center;
+}
