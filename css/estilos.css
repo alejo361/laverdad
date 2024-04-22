@@ -71,16 +71,17 @@ body{
 }
 .necroTitulo{
     text-align: right;
-    /*border-bottom: solid 2px #cdc4b4;*/
 }
 .textNoticia{
     text-align: justify;
 }
-.policialesContainer{
-    background-image: url('../img/fondo-crimen.png');
-    /*background-image:url('../images/bg.png');*/
-    background-repeat:no-repeat;
-    /*background-size:contain;*/
-    background-size: cover;
-    background-position:center;
+
+@media screen and (min-width: 992px){
+    .policialesContainer{
+        background-image: url('../img/fondo-crimen.png');
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position:center;
+    }
+
 }
