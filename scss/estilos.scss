@@ -1,0 +1,99 @@
+@import "vars";
+
+body{
+    font-family: "News Cycle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.navbar {
+    border-top: $borde-fino;
+    border-bottom: $borde-fino;
+    
+}
+.necroCard:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+.nav-item{
+    a{
+        &:hover{
+            border-bottom: solid 2px $contraste-oscuro;
+        }
+    }
+}
+.footer{
+    background-color: $contraste-oscuro;
+}
+.noticia{
+    border-left: 0;
+    border-right: 0;
+    border-bottom: $borde-grueso;
+}
+.tituloUltimasNoticias{
+    text-align: left;
+    font-size: 1.5rem;   
+}
+.card-text{
+    text-align: left;
+}
+.carouselLink{
+    text-decoration: none;
+    color: white;
+}
+.cardLink{
+    text-decoration: none;
+    color: #000;
+}
+.tituloNoticia{
+    text-align: left;
+
+}
+.encabezado{
+    border-bottom: $borde-grueso;
+}
+.fecha{
+    color:$contraste-oscuro;
+}
+.textoContacto{
+    background-color: #cdc4b4;
+    border-bottom: $borde-grueso;
+    text-align: left;
+    color: white;
+}
+.enviarForm{
+    background-color: #a37873;
+    color: white;
+    &:hover{
+        background-color: #7c5551;
+        color: white;
+    }
+    &:active{
+        background-color: #af918e;
+        color: white;
+    }
+}
+
+.cruzNecrologicas{
+    width: 1.5rem;
+    height: 2rem;
+}
+.necroFecha{
+    color:#a37873
+}
+.necroTitulo{
+    text-align: right;
+}
+.textNoticia{
+    text-align: justify;
+}
+
+@media screen and (min-width: 992px){
+    .policialesContainer{
+        background-image: url('../img/fondo-crimen.png');
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position:center;
+    }
+
+}
