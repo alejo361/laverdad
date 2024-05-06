@@ -1,7 +1,30 @@
+@keyframes ancho {
+  0% {
+    width: 5%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 body {
   font-family: "News Cycle", sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar {
@@ -9,17 +32,38 @@ body {
   border-bottom: 1px solid #cdc4b4;
 }
 
-.necroCard:hover {
-  transform: scale(1.03);
-  box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.5);
-}
-
 .nav-item a:hover {
   border-bottom: solid 2px #3c595f;
 }
 
-.footer {
+.banner {
+  width: 100%;
+  background-color: #cdc4b4;
+}
+.banner p {
+  animation: aparecer;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.banner a {
+  font-weight: bolder;
+  text-decoration: none;
+  color: #000;
+}
+.banner a:hover {
+  color: white;
   background-color: #3c595f;
+}
+.banner hr {
+  border-bottom: 3px solid black;
+  animation: ancho;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.necroCard:hover, .itemNoticia:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.5);
 }
 
 .noticia {
@@ -51,12 +95,28 @@ body {
   text-align: left;
 }
 
+.textNoticia {
+  text-align: justify;
+}
+
 .encabezado {
   border-bottom: 2px solid #cdc4b4;
 }
 
 .fecha {
   color: #3c595f;
+}
+
+.cruzNecrologicas {
+  width: 1.5rem;
+  height: 2rem;
+}
+
+.necroTitulo {
+  text-align: right;
+}
+.necroTitulo h1 {
+  color: #a37873;
 }
 
 .textoContacto {
@@ -79,21 +139,8 @@ body {
   color: white;
 }
 
-.cruzNecrologicas {
-  width: 1.5rem;
-  height: 2rem;
-}
-
-.necroFecha {
-  color: #a37873;
-}
-
-.necroTitulo {
-  text-align: right;
-}
-
-.textNoticia {
-  text-align: justify;
+.footer {
+  background-color: #3c595f;
 }
 
 @media screen and (min-width: 992px) {

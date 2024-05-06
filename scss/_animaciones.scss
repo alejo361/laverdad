@@ -1,0 +1,21 @@
+@keyframes ancho {
+    0% {
+        width: 5%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+@keyframes aparecer{
+    0% {
+        opacity: 0.7;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
