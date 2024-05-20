@@ -1,0 +1,25 @@
+.banner{
+    width: 100%;
+    background-color: $contraste-claro;
+    p{
+        animation: aparecer;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    a{
+        font-weight: bolder;
+        text-decoration: none;
+        color: #000;
+        //border-bottom: 3px solid black;  
+        &:hover{
+            color: white;
+            background-color: $contraste-oscuro;
+        }
+    }
+    hr{
+        border-bottom: 3px solid black;  
+        animation: ancho;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+}

@@ -1,0 +1,88 @@
+
+body{
+    font-family: "News Cycle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    font-size: 1.25rem;
+}
+
+.necroCard, .itemNoticia{    
+    @include sombras;
+}
+
+.noticia{
+    border-left: 0;
+    border-right: 0;
+    border-bottom: $borde-grueso;
+}
+.tituloUltimasNoticias{
+    text-align: left;
+    font-size: 1.5rem;   
+}
+
+.card-text{
+    text-align: left;
+}
+
+.carouselLink{
+    text-decoration: none;
+    color: white;
+}
+
+.cardLink{
+    text-decoration: none;
+    color: #000;
+}
+
+.tituloNoticia{
+    text-align: left;
+}
+
+.textNoticia{
+    text-align: justify;
+}
+
+.encabezado{
+    border-bottom: $borde-grueso;
+}
+
+.fecha{
+    color:$contraste-oscuro;
+}
+
+.cruzNecrologicas{
+    width: 1.5rem;
+    height: 2rem;
+}
+
+.necroTitulo{
+    text-align: right;
+    h1{
+        color:#a37873;
+    }
+}
+
+.textoContacto{
+    background-color: #cdc4b4;
+    border-bottom: $borde-grueso;
+    text-align: left;
+    color: white;
+}
+
+.enviarForm{
+    background-color: #a37873;
+    color: white;
+    &:hover{
+        background-color: #7c5551;
+        color: white;
+    }
+    &:active{
+        background-color: #af918e;
+        color: white;
+    }
+}

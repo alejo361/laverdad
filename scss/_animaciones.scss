@@ -1,3 +1,10 @@
+@mixin sombras {
+    &:hover{
+        transform: scale(1.03);
+        box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.5);
+        transition: all 0.2s;
+    }
+}
 @keyframes ancho {
     0% {
         width: 5%;

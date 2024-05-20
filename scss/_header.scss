@@ -1,0 +1,13 @@
+
+.navbar {
+    border-top: $borde-fino;
+    border-bottom: $borde-fino;
+}
+
+.nav-item{
+    a{
+        &:hover{
+            border-bottom: solid 2px $contraste-oscuro;
+        }
+    }
+}
